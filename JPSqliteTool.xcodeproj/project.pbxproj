@@ -15,6 +15,11 @@
 		274EC8911F01769800925865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274EC88F1F01769800925865 /* LaunchScreen.storyboard */; };
 		274EC89C1F01769800925865 /* JPSqliteToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC89B1F01769800925865 /* JPSqliteToolTests.m */; };
 		274EC8A71F01769800925865 /* JPSqliteToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC8A61F01769800925865 /* JPSqliteToolUITests.m */; };
+		274EC8BE1F0176AA00925865 /* JPModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC8B71F0176AA00925865 /* JPModelTool.m */; };
+		274EC8BF1F0176AA00925865 /* JPSqliteModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC8B91F0176AA00925865 /* JPSqliteModelTool.m */; };
+		274EC8C01F0176AA00925865 /* JPSqliteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC8BB1F0176AA00925865 /* JPSqliteTool.m */; };
+		274EC8C11F0176AA00925865 /* JPTableTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC8BD1F0176AA00925865 /* JPTableTool.m */; };
+		274EC8C41F0176BA00925865 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 274EC8C31F0176BA00925865 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		274EC8A21F01769800925865 /* JPSqliteToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPSqliteToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		274EC8A61F01769800925865 /* JPSqliteToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPSqliteToolUITests.m; sourceTree = "<group>"; };
 		274EC8A81F01769800925865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274EC8B51F0176AA00925865 /* JPModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPModelProtocol.h; sourceTree = "<group>"; };
+		274EC8B61F0176AA00925865 /* JPModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPModelTool.h; sourceTree = "<group>"; };
+		274EC8B71F0176AA00925865 /* JPModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPModelTool.m; sourceTree = "<group>"; };
+		274EC8B81F0176AA00925865 /* JPSqliteModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSqliteModelTool.h; sourceTree = "<group>"; };
+		274EC8B91F0176AA00925865 /* JPSqliteModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSqliteModelTool.m; sourceTree = "<group>"; };
+		274EC8BA1F0176AA00925865 /* JPSqliteTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSqliteTool.h; sourceTree = "<group>"; };
+		274EC8BB1F0176AA00925865 /* JPSqliteTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSqliteTool.m; sourceTree = "<group>"; };
+		274EC8BC1F0176AA00925865 /* JPTableTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPTableTool.h; sourceTree = "<group>"; };
+		274EC8BD1F0176AA00925865 /* JPTableTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPTableTool.m; sourceTree = "<group>"; };
+		274EC8C31F0176BA00925865 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274EC8C41F0176BA00925865 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +101,7 @@
 				274EC89A1F01769800925865 /* JPSqliteToolTests */,
 				274EC8A51F01769800925865 /* JPSqliteToolUITests */,
 				274EC87F1F01769800925865 /* Products */,
+				274EC8C21F0176BA00925865 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +118,7 @@
 		274EC8801F01769800925865 /* JPSqliteTool */ = {
 			isa = PBXGroup;
 			children = (
+				274EC8B41F0176AA00925865 /* Classes */,
 				274EC8841F01769800925865 /* AppDelegate.h */,
 				274EC8851F01769800925865 /* AppDelegate.m */,
 				274EC8871F01769800925865 /* ViewController.h */,
@@ -138,6 +156,30 @@
 				274EC8A81F01769800925865 /* Info.plist */,
 			);
 			path = JPSqliteToolUITests;
+			sourceTree = "<group>";
+		};
+		274EC8B41F0176AA00925865 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				274EC8B51F0176AA00925865 /* JPModelProtocol.h */,
+				274EC8B61F0176AA00925865 /* JPModelTool.h */,
+				274EC8B71F0176AA00925865 /* JPModelTool.m */,
+				274EC8B81F0176AA00925865 /* JPSqliteModelTool.h */,
+				274EC8B91F0176AA00925865 /* JPSqliteModelTool.m */,
+				274EC8BA1F0176AA00925865 /* JPSqliteTool.h */,
+				274EC8BB1F0176AA00925865 /* JPSqliteTool.m */,
+				274EC8BC1F0176AA00925865 /* JPTableTool.h */,
+				274EC8BD1F0176AA00925865 /* JPTableTool.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		274EC8C21F0176BA00925865 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				274EC8C31F0176BA00925865 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274EC8BE1F0176AA00925865 /* JPModelTool.m in Sources */,
 				274EC8891F01769800925865 /* ViewController.m in Sources */,
+				274EC8C01F0176AA00925865 /* JPSqliteTool.m in Sources */,
 				274EC8861F01769800925865 /* AppDelegate.m in Sources */,
+				274EC8C11F0176AA00925865 /* JPTableTool.m in Sources */,
+				274EC8BF1F0176AA00925865 /* JPSqliteModelTool.m in Sources */,
 				274EC8831F01769800925865 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
