@@ -29,23 +29,13 @@
     }
     createTableSql = [createTableSql stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\""]];
     
-//    [[createTableSql stringByReplacingOccurrencesOfString:@"\"" withString:@"" options:(NSStringCompareOptions) range:<#(NSRange)#>]
+
     
     createTableSql = [createTableSql stringByReplacingOccurrencesOfString:@"\"" withString:@""];
     createTableSql = [createTableSql stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     createTableSql = [createTableSql stringByReplacingOccurrencesOfString:@"\t" withString:@""];
     
-    // CREATE TABLE JPStu((stuNum))
-    
-    // 1. age integer,stuNum integer,score real,name text, primary key
-//    CREATE TABLE "JPStu" ( \n
-//                           "age2" integer,
-//                           "stuNum" integer,
-//                           "score" real,
-//                           "name" text,
-//                           PRIMARY KEY("stuNum")
-//                           )
-    
+       
     
     NSString *nameTypeStr = [createTableSql componentsSeparatedByString:@"("][1];
     
