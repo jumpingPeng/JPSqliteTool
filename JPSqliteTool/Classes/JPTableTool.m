@@ -16,8 +16,7 @@
     
     NSString *tableName = [JPModelTool tableName:cls];
     
-    // CREATE TABLE JPStu(age integer,stuNum integer,score real,name text, primary key(stuNum))
-    
+       
     NSString *queryCreateSqlStr = [NSString stringWithFormat:@"select sql from sqlite_master where type = 'table' and name = '%@'", tableName];
     
     
